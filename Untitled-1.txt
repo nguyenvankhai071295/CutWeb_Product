@@ -1,0 +1,24 @@
+data-autoplay="true" 
+data-arrows="false" 
+data-fade="false" 
+data-center-mode="false" 
+data-autoplay-speed="3000" 
+data-dots="false" 
+data-infinite="true" 
+data-padding="15" 
+data-vertical="false" 
+data-vertical-swiping="false"
+data-responsive="[
+    {'breakpoint&quot;: 1921, &quot;settings&quot;: {&quot;slidesToShow&quot;: 4}}, 
+    {&quot;breakpoint&quot;: 1920, &quot;settings&quot;: {&quot;slidesToShow&quot;: 4}}, 
+    {&quot;breakpoint&quot;: 1480, &quot;settings&quot;: {&quot;slidesToShow&quot;: 4}}, 
+    {&quot;breakpoint&quot;: 1200, &quot;settings&quot;: {&quot;slidesToShow&quot;: 3}}, 
+    {&quot;breakpoint&quot;: 992, &quot;settings&quot;: {&quot;slidesToShow&quot;: 3}}, 
+    {&quot;breakpoint&quot;: 768, &quot;settings&quot;: {&quot;slidesToShow&quot;: 2}}, 
+    {&quot;breakpoint&quot;: 576, &quot;settings&quot;: {&quot;slidesToShow&quot;: 2}}, 
+    {&quot;breakpoint&quot;: 480, &quot;settings&quot;: {&quot;slidesToShow&quot;: 1}}, 
+    {&quot;breakpoint&quot;: 361, &quot;settings&quot;: {&quot;slidesToShow&quot;: 1}}, 
+    {&quot;breakpoint&quot;: 1, &quot;settings&quot;: {&quot;slidesToShow&quot;: 1}}
+]" 
+data-rows="2" 
+data-slides-to-show="4">
