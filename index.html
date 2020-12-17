@@ -29,13 +29,10 @@
     <script src="./js/java.js"></script>
 </head>
 
-<body>
-    
+<body onload="Load()">
     <div class="container-fluid px-0">
         <div class="tele-top">
             <span id="goToTop"><i class="fas fa-arrow-up"></i></span>
-        </div>
-        <div class="container__allwindow">
         </div>
         <div class="container__headertop px-0">
             <header class="container__top">
@@ -102,11 +99,11 @@
                     <div class="header__main">
                         <div class="container">
                             <div class="header__main--container row">
-                                <div
-                                    class="header__main--left col-xl-2 col-lg-2 col-12 d-flex justify-content-between align-items-center col-sm-12 col-12">
-                                    <i class="fas fa-align-justify"></i>
+                                <div class="header--bgshow"></div>
+                                <div class="header__main--left col-xl-2 col-lg-2 col-12 d-flex justify-content-between align-items-center col-sm-12 col-12">
+                                    <span><i class="fas fa-align-justify"></i></span>
                                     <img src="./Images/logo.png" class="img-fluid" alt="">
-                                    <i class="fas fa-search"></i>
+                                    <span class="toggle--search"><i class="fas fa-search"></i></span>
                                 </div>
                                 <div class="header__main--center col-xl-6 col-lg-5 col-md-8 col-12 px-xl-3">
                                     <div class="container__find col-12">
@@ -137,8 +134,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div
-                                    class=" header__main--right col-xl-4 col-lg-5 col-md-12 sticky-md-top col-sm-12 col-12">
+                                <div class=" header__main--right col-xl-4 col-lg-5 col-md-12 sticky-md-top col-sm-12 col-12">
                                     <div
                                         class="col-12 main__right--container  d-flex justify-content-lg-end justify-content-center align-items-center px-0">
                                         <div class="main__right--account">
@@ -433,7 +429,7 @@
                                     <div class="navbar__between-container">
                                         <ul
                                             class="navbar__between--ul  justify-content-start my-0">
-                                            <li><a href="#"><b>HOME</b></a></li>
+                                            <li><a href="#"><b>HOME</b></a><span class="close"><i class="fas fa-times"></i></span></li>
                                             <li class="ul__demo"><a href="#"><b class="mr-2">DEMO</b><i
                                                         class="fas fa-angle-down"></i></a>
         
@@ -454,7 +450,7 @@
                                             <li class=""><a href="#"><b>DEALS</b></a></li>
                                             <li class=""><a href="#"><b>NEW ARRIVAL</b></a>
                                                 <div class="between__ul--newarriva">
-                                                    <div class="row py-4">
+                                                    <div class="row">
                                                         <div class="col-12 d-lg-flex mb-4">
                                                             <div class="col-lg-3 col-12">
                                                                 <p class="newarriva--title">Smartphone & table</p>
@@ -519,7 +515,7 @@
             </div>
         </nav>
         <article class="container__body">
-            <section class="info__watch">
+            <section class="info__watch box--slider">
                 <div class="watch__image autoplay" data- infinite='true' , data-slides-To-Show='1' ,
                     data-slides-To-Scroll='1'>
                     <div class="image--slide">
@@ -599,7 +595,7 @@
                     </div>
                 </div>
             </section>
-            <section class="first-television">
+            <section class="first-television box--slider">
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-3 col-md-4  col-12 mb-5  mb-lg-0  product_wrapper">
@@ -909,15 +905,15 @@
                     </div>
                 </div>
             </section>
-            <section class="featured__products">
+            <section class="featured__products box--slider">
                 <div class="container py-5">
                     <div class="col-12 featured__products--container py-4">
                         <div class="featured__products--border">
                             <div class="col-12 featured__products--top w-100 d-flex align-items-center">
-                                <div class="products__title col-lg-3 col-md-5 col-sm-6 col-6 px-0">
+                                <div class="products__title col-lg-3 col-md-5 col-sm-6 col-12 px-0">
                                     <b>FEATURED PRODUCTS</b>
                                 </div>
-                                <div class="border--row col-lg-9 col-md-7 col-sm-6 col-6 px-0"></div>
+                                <div class="border--row col-lg-9 col-md-7 col-sm-6 col-0 px-0"></div>
                             </div>
                             <div class="col-12 px-0 featured_products--animation">
                                 <div class="">
@@ -1201,8 +1197,8 @@
                     </div>
                 </div>
             </section>
-            <section class="product__consoles">
-                <div class="container py-4">
+            <section class="product__consoles box--slider">
+                <div class="container py-4 px-0">
                     <div class="products__consoles--container">
                         <div class="products__title-top d-lg-flex align-items-center">
                             <div class="title--left col-xl-2 col-lg-3 col-md-12 col-sm-12 col-12 px-0">
@@ -2315,12 +2311,17 @@
                     </div>
                 </div>
             </section>
-            <div class="banner-bottom">
+            <div class="banner-bottom box--slider">
                 <div class="container">
+                    <div class="banner--title">
+                        <div class="size--18">Be one of the first to</div>
+                        <div class="size--40">Experiences</div>
+                        <div class="size--24">playstaion vr </div>
+                    </div>
                   <div class="banner-img"> <img src="./Images/quangcao.png" class="img-fluid" alt="No load image"></div>
                 </div>
             </div>
-            <section class="tv-audio">
+            <section class="tv-audio box--slider">
                 <div class="container py-4">
                     <div class="products__consoles--container">
                         <div class="products__title-top d-lg-flex align-items-center">
@@ -3434,14 +3435,14 @@
                     </div>
                 </div>
             </section>
-            <section class="mostviewed__products">
+            <section class="mostviewed__products box--slider">
                 <div class="container  py-5">
                     <div class="mostviewed__products--container py-4 ">
                         <div class="products__title-top d-flex align-items-center">
-                            <div class="title--left col-xl-3 col-lg-5 col-md-6 col-6 pr-0">
+                            <div class="title--left col-xl-3 col-lg-5 col-sm-6 col-12 pr-0">
                                 <b>MOST VIEWD PRODUCTS</b>
                             </div>
-                            <div class="title--center border--row col-xl-9 col-lg-7 col-md-6 col-6 col-md-6"></div>
+                            <div class="title--center border--row col-xl-9 col-lg-7 col-sm-6 col-0"></div>
                         </div>
                         <div class="mostviewed__products--row">
                             <div class="__mostviewed">
@@ -3838,7 +3839,7 @@
                     </div>
                 </div>
             </section>
-            <section class="brand">
+            <section class="brand box--slider">
                 <div class="container">
                     <div class="brand--logo py-5 ">
                         <div class="brand_logo"><a href="#"><img src="./Images/brand.jpg" alt=""></a></div>
@@ -3855,28 +3856,28 @@
                 </div>
             </section>
         </article>
-        <footer class="container__footer">
+        <footer class="container__footer box--slider">
             <div class="footer__top">
-                <div class="container py-5">
+                <div class="container py-5 px-0">
                     <div class="footer__top--container d-lg-flex">
                         <div class="col-lg-6 mb-md col-12 footer--top__box d-md-flex px-0">
-                            <div class="col-lg-8 col-md-6 col-12 _mb footer__top--info px-0">
+                            <div class="col-lg-8 col-md-6 col-12 _mb footer__top--info">
                                 <p class="info__title"><b>CONTACT DETAILS</b></p>
-                                <div class="info__address d-flex py-2">
+                                <div class="info__address d-flex">
                                     <div class=""><i class="fas fa-map-marker-alt"></i></div><span class="ml-2">45 Grand
                                         Central
                                         Terminal New York,NY 1017 United
                                         State USA</span>
                                 </div>
-                                <div class="info__telephone d-flex py-2">
+                                <div class="info__telephone d-flex">
                                     <div class=""><i class="fas fa-phone-alt"></i></div><a href="tel:(+123) 456 789 "
-                                        class="ml-2">(+123) 456 789</a>-<a href="tel:(+204) 666 888">(+204) 666 888</a>
+                                        class="ml-2">(+123) 456 789</a><a href="">-</a><a href="tel:(+204) 666 888">(+204) 666 888</a>
                                 </div>
-                                <div class="info__email d-flex py-2">
+                                <div class="info__email d-flex">
                                     <div class=""><i class="fas fa-envelope"></i></div><a href=""
                                         class="ml-2">contact@yourcompany.com</a>
                                 </div>
-                                <div class="info__time d-flex py-2">
+                                <div class="info__time d-flex">
                                     <div class=""><i class="fas fa-clock"></i></div><span class="ml-2">Mon-Sat 9:00pm -
                                         5:00pm
                                         Sun:Closed</span>
@@ -3894,7 +3895,7 @@
                                                 class="fab fa-instagram-square"></i></button></a>
                                 </div>
                             </div>
-                            <div class="col-lg-4 col-md-6 col-12 px-0">
+                            <div class="col-lg-4 col-md-6 col-12">
                                 <p class="info__title"><b>CUSTOMER</b></p>
                                 <p><a href="#">Shipping & Returns</a></p>
                                 <p><a href="#">Secure Shopping</a></p>
@@ -3904,7 +3905,7 @@
                             </div>
                         </div>
                         <div class="col-lg-6 col-12 box--info d-md-flex footer--top__box px-0">
-                            <div class="col-lg-4 col-md-6  col-12 _mb px-0">
+                            <div class="col-lg-4 col-md-6  col-12 _mb">
                                 <p class="info__title"><b>INFORMATION</b></p>
                                 <p><a href="#">Privacy Policy</a></p>
                                 <p><a href="#">Customer Service</a></p>
@@ -3912,8 +3913,8 @@
                                 <p><a href="#">Contact</a></p>
                                 <p><a href="#">Sitemap</a></p>
                             </div>
-                            <div class="col-lg-8 col-md-6 col-12 px-0">
-                                <p class="info__title"><b>SUBSCRIBE OUR NEWSLETTER</b></p>
+                            <div class="col-lg-8 col-md-6 col-12">
+                                <p class="info__title glade--bottom"><b>SUBSCRIBE OUR NEWSLETTER</b></p>
                                 <p class="info__title"><span>Get <strong>25% Off</strong> first purchase!</span></p>
                                 <p>
                                 <form action="">
@@ -3928,8 +3929,8 @@
                                 </p>
                                 <p class="info__title"><b>DOWNLOAD OUR APP</b></p>
                                 <div class="title--download d-sm-flex">
-                                    <div class="col-sm-6 pl-0 col-12"> <a href="#"><img src="./Images/google.png" alt=""></a></div>
-                                    <div class="col-sm-6 pl-0 col-12 py-sm-0 pt-3"> <a href="#"><img src="./Images/ggplay.png" alt=""></a></div>
+                                    <div class="col-sm-6 pl-0 col-12"> <a href="#"><img src="./Images/google.png" class="img-fluid" alt=""></a></div>
+                                    <div class="col-sm-6 pl-0 col-12 py-sm-0 pt-3"> <a href="#"><img src="./Images/ggplay.png" class="img-fluid" alt=""></a></div>
                                 </div>
                             </div>
                         </div>
@@ -3979,7 +3980,6 @@
             <div class="navbar--mb"></div>
         </footer>
     </div>
-
 </body>
 
 </html>
