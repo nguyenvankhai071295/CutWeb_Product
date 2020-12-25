@@ -662,9 +662,6 @@ html {
   margin: 0px;
   cursor: pointer;
 }
-.container__nav .product__nav .navbar__between .navbar__between--ul .ul__demo .between__ul--demo p:hover {
-  background-color: #f1f1f1;
-}
 .container__nav .product__nav .navbar__between .navbar__between--ul .ul__demo .between__ul--demo p:hover a {
   color: #f2c557;
 }
@@ -1619,6 +1616,10 @@ html {
   }
   .container__nav .product__nav .navbar__between .navbar__between--ul li {
     position: relative;
+    padding: 0px;
+  }
+  .container__nav .product__nav .navbar__between .navbar__between--ul li a {
+    padding-left: 15px;
   }
   .container__nav .product__nav .navbar__between .navbar__between--ul li .newarriva--title {
     position: relative;
