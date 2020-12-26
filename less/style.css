@@ -56,7 +56,7 @@ html {
 .container__headertop .container__top .advertise {
   position: relative;
 }
-.container__headertop .container__top .advertise .close {
+.container__headertop .container__top .advertise .__close {
   position: absolute;
   top: 5px;
   right: 18%;

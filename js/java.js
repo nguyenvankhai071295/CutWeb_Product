@@ -20,7 +20,7 @@ $(document).ready(function () {
     $(".event--general").addClass("hide");
     $(this).next().toggleClass("hide");
     $(this).find(".__shadow").toggleClass("hide");
-    $(".close").addClass("hide");
+    $(".__close").addClass("hide");
     e.stopPropagation();
   })
   $(".event--general").click(function(e){
