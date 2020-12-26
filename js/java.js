@@ -16,15 +16,19 @@ $(document).ready(function () {
   });
   // scroll top end
   //event click hide-show start
-
-  $("body").on('click', '.event--click',function(){
+  $("body").on('click', '.event--click',function(e){
+    $(".event--general").addClass("hide");
     $(this).next().toggleClass("hide");
     $(this).find(".__shadow").toggleClass("hide");
     $(".close").addClass("hide");
+    e.stopPropagation();
   })
-  $("body").click(function(){
-    $(".event--click").next().addClass("hide");
+  $(".event--general").click(function(e){
+    e.stopPropagation();
   })
+  $(document).click(function(){
+    $(".event--general").addClass("hide");
+  });
   $(".navbar--icon").click(function(){
     $(".navbar__between").toggleClass("hide");
       $(".__after").toggleClass("hide");
@@ -43,6 +47,7 @@ $(document).ready(function () {
 //handle element when screen scroll open//
 $(window).resize(function () {
   if (window.matchMedia('(min-width: 992px)').matches) {
+    $(".title--right").removeClass("event--general");
     $(".__general--min992").removeClass("hide");
     $(".__eventclick--min992").removeClass("event--click");
     $("body").scroll(function () {
@@ -50,6 +55,7 @@ $(window).resize(function () {
     });
   }
   if (window.matchMedia('(max-width: 991px)').matches) {
+    $(".title--right").addClass("event--general");
     $(".__general--min992").addClass("hide");
     $(".__eventclick--min992").addClass("event--click");
     $(".toggle--search").removeClass("hide");
@@ -82,22 +88,24 @@ $(window).resize(function () {
 
 //setup window load open//
   function myLoad() {
+    AOS.init({
+      duration: 1000,
+    });
       $('.tele-top').fadeOut();
   if ($('.box--slider').find('div').hasClass('slick-slider')) {
       $('.box--slider').css('opacity', '1');
   }
   //handle element when screen change open//
   if (window.matchMedia('(min-width: 992px)').matches) {
+    $(".title--right").remove("event--general");
     $(".__general--min992").removeClass("hide");
     $(".__eventclick--min992").removeClass("event--click");
-    AOS.init({
-      duration: 1000,
-    });
     $("body").scroll(function () {
       $('.header__top').removeClass("hide");
     });
   }
   if (window.matchMedia('(max-width: 991px)').matches) {
+    $(".title--right").addClass("event--general");
     $(".__general--min992").addClass("hide");
     $(".toggle--search").removeClass("hide");
     $(".__eventclick--min992").addClass("event--click");

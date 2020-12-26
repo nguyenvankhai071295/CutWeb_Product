@@ -24,10 +24,13 @@ html {
 .container-fluid {
   position: relative;
 }
-.container-fluid #goToTop {
+.container-fluid .tele-top {
   position: fixed;
-  right: 15px;
+  left: 90vw;
   bottom: 120px;
+  z-index: 11;
+}
+.container-fluid .tele-top #goToTop {
   width: 50px;
   height: 50px;
   border: none;
@@ -37,13 +40,12 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 1;
   cursor: pointer;
 }
-.container-fluid #goToTop:hover .fa-arrow-up {
+.container-fluid .tele-top #goToTop:hover .fa-arrow-up {
   color: #f2c557;
 }
-.container-fluid #goToTop .fa-arrow-up {
+.container-fluid .tele-top #goToTop .fa-arrow-up {
   color: white;
   font-size: 20px;
 }
@@ -1761,6 +1763,9 @@ html {
   }
 }
 @media only screen and (max-width: 575px) {
+  .container-fluid .tele-top {
+    left: 85vw;
+  }
   .container__headertop .container__top .container__header .header__main .header__main--container .header__main--right .__address .box--hide {
     font-size: 10px;
   }
@@ -1787,6 +1792,9 @@ html {
   }
 }
 @media only screen and (max-width: 440px) {
+  .container-fluid .tele-top {
+    left: 84vw;
+  }
   .container__headertop .container__top .container__header .header__main .header__main--container .header__main--center .container__find {
     width: 100%;
   }
