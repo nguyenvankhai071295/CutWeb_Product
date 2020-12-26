@@ -8,6 +8,14 @@ html {
     width: 100%;
     height: 100%;
     box-sizing: border-box;
+    overflow-x: hidden;
+}
+.mr-100{
+    animation: body 0.5s forwards;
+    @keyframes body {
+        0%{margin-left: 0}
+        100%{margin-left: 109vw}
+    }
 }
 .container-fluid {
     position: relative;
@@ -206,16 +214,23 @@ html {
                     .header__main--left {
                         font-size: 20px;
                         .__after{
-                            &::after{
+                            position: fixed;
+                            right:0;
+                            top: 0;
+                            z-index: 100;
+                            animation: ex 0.1s forwards;
+                            animation-delay: 0.5s;
+                            opacity: 0;
+                            @keyframes ex {
+                                0%{opacity: 0;}
+                                100%{opacity: 1;}
+                            }
+                            &::before{
                                 font-family: "Font Awesome 5 Free";
                                 font-weight: 700;
-                                content: "\f410";
-                                position: fixed;
-                                right: 0;
-                                top: 0;
+                                content: "\f410";                           
                                 font-size: 30px;
                                 color: black;
-                                z-index: 100;
                                 line-height: 30px;
                             }
                         }
@@ -240,7 +255,7 @@ html {
                             font-size: 13px;
                             padding: 0px 20px;
                             line-height: 36px;
-                          
+                            
                             .main__center--categories {
                                 position: relative;
 
@@ -1506,7 +1521,7 @@ html {
     }
     // close public
 }
-.hiden{
+.hide{
     display: none !important;
 }
 .show{
@@ -1862,7 +1877,7 @@ html {
             height: auto;
         }
     }
-
+  
     .container__nav .product__nav .navbar__between {
         position: fixed;
         top: 0px;
@@ -1870,9 +1885,13 @@ html {
         padding: 0px;
         height: 100vh;
         z-index: 49;
-        width: 90%;
+        width: 90vw;
         background-color: black;
-
+        animation: ex 0.5s forwards;
+        @keyframes ex {
+            0%{margin-left: -70px;opacity: 0;}
+            100%{margin-left: 0px;opacity: 1;}
+        }
         .navbar__between--ul .ul__demo .between__ul--demo {
             width: 100%;
             position: relative;
@@ -1947,9 +1966,11 @@ html {
             z-index: 50;
             width: 80%;
             background-color: #ffffff;
+            animation:ex 0.5s forwards;
                 .main__center--text{
                     width: 66% ;
                 }
+               
         }
         .toggle--search{
          display: block;  
