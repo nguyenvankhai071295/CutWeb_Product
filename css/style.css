@@ -49,14 +49,17 @@ html {
   color: white;
   font-size: 20px;
 }
+.slide__img img {
+  margin: 0 auto;
+}
 .remove--border {
   border: none;
   outline: none;
 }
-.container__headertop .container__top .advertise {
+.container__headertop .container__top .advertise .container {
   position: relative;
 }
-.container__headertop .container__top .advertise .__close {
+.container__headertop .container__top .advertise .container .__close {
   position: absolute;
   top: 5px;
   right: 18%;
